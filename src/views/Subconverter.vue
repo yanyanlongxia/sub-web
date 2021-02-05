@@ -6,8 +6,6 @@
           <div slot="header">
             订阅转换
             <svg-icon icon-class="github" style="margin-left: 20px" @click="goToProject" />
-            <svg-icon icon-class="telegram" style="margin-left: 20px" @click="gotoTgChannel" />
-
             <div style="display: inline-block; position:absolute; right: 20px">{{ backendVersion }}</div>
           </div>
           <el-container>
@@ -234,7 +232,6 @@ const gayhubRelease = process.env.VUE_APP_BACKEND_RELEASE
 const defaultBackend = process.env.VUE_APP_SUBCONVERTER_DEFAULT_BACKEND + '/sub?'
 const shortUrlBackend = process.env.VUE_APP_MYURLS_DEFAULT_BACKEND + '/short'
 const configUploadBackend = process.env.VUE_APP_CONFIG_UPLOAD_BACKEND + '/config/upload'
-const tgBotLink = process.env.VUE_APP_BOT_LINK
 
 export default {
   data() {
@@ -545,7 +542,6 @@ export default {
       dialogUploadConfigVisible: false,
       uploadConfig: "",
       uploadPassword: "",
-      myBot: tgBotLink,
       sampleConfig: remoteConfigSample
     };
 
