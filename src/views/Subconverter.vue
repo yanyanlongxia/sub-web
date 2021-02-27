@@ -281,7 +281,12 @@ export default {
               {
                 label: "不选,由接口提供方提供",
                 value: ""
-              }
+              },
+              {
+                label: "ACL4SSR 本站加强版 分组比较全 (与Github同步)",
+                value:
+                  "https://raw.githubusercontent.com/yanyanlongxia/ACL4SSR/master/Clash/config/ACL4SSR.ini"
+              },
             ]
           },
           {
